@@ -1,0 +1,7 @@
+<launch>
+  <include file="$(find openni_launch)/launch/openni.launch" />
+  <node name="openni_tracker" pkg="openni_tracker" type="openni_tracker" />
+  <node name="postures" pkg="kinect_postures" type="postures" />
+  <node name="movements" pkg="kinect_postures" type="movement" />
+  <node name="kinect_gui" pkg="kinect_qt" type="kinect_qt" />
+</launch>
